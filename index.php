@@ -2,7 +2,7 @@
 
 /*
 1 Creare un file index e inserire in php un array contenente i dati dei dischi.
-2 importare vuejs e axiom
+2 importare bootstrap, vuejs e axiom
 3 stampare in pagina la lista dei dischi e le caratterisctiche dentro all'array
 4 spostare i dati in un fikle json
 5 riempire le copertine co i dati provenienti però dal file json e non più dall'array di index.php
@@ -77,17 +77,30 @@ NB
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dischi</title>
+	<!-- cdn bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
+	<div id="app">
 
-	<h1><?= $dischi[0]['title'] ?></h1>
-
-
-
+		<h1><?= $dischi[0]['title'] ?></h1>
 
 
 
+	</div>
+
+	<!-- cdn bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<!-- cdn vuejs -->
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<!-- cdn axios -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+		integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
