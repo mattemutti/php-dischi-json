@@ -3,13 +3,13 @@
 /*
 1 Creare un file index e inserire in php un array contenente i dati dei dischi.
 2 importare bootstrap, vuejs e axiom
-3 stampare in pagina la lista dei dischi e le caratterisctiche dentro all'array
+3 stampare in pagina la lista dei dischi e le caratterisctiche dentro all'array presente in php
 4 spostare i dati in un fikle json
 5 riempire le copertine co i dati provenienti però dal file json e non più dall'array di index.php
 6 fare dello stile delle copertine
 */
 
-
+/*
 $dischi = [
 	[
 		'title' => 'New Jersey',
@@ -57,14 +57,11 @@ $dischi = [
 ];
 
 $json_string = json_encode($dischi);
+header('Content-type: application/json');
 
-/*
-NB
-*/
-//se attivo header mi scarica il file json
-//header('Content-type: applicatio/json');
 echo $json_string;
-
+*/
+// SPOSTATO NEL FILE api.php ALTRIMENTI DEVO VEDERLE IN QUESTA PAGINA E NON VEDO IL SITO.
 
 
 
@@ -92,7 +89,7 @@ echo $json_string;
 			<div class="row">
 				<div class="col-4">
 					<h3>
-						{{ message }}
+
 					</h3>
 				</div>
 			</div>
@@ -102,6 +99,10 @@ echo $json_string;
 
 	</div>
 
+	<!-- cdn axios -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+		integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- cdn bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -109,10 +110,6 @@ echo $json_string;
 	<!-- cdn vuejs -->
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 	<script src="./assets/js/app.js"></script>
-	<!-- cdn axios -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
-		integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
