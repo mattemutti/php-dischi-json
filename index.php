@@ -87,10 +87,13 @@ echo $json_string;
 
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
-					<h3>
+				<div class="col-4" v-for="disk in dischi">
+					<img class="cover" :src="disk.poster" alt="">
+					<h3> {{disk.title}} </h3>
+					<div> {{disk.author}} </div>
+					<div> {{disk.year}} </div>
+					<div> {{disk.genre}} </div>
 
-					</h3>
 				</div>
 			</div>
 		</div>
