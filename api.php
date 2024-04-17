@@ -1,5 +1,5 @@
 <?php
-
+/*
 $dischi = [
 	[
 		'title' => 'New Jersey',
@@ -48,5 +48,7 @@ $dischi = [
 
 $json_string = json_encode($dischi);
 header('Content-type: application/json');
+*/
 
+$json_string = file_get_contents('dischi.json');
 echo $json_string;

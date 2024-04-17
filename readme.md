@@ -23,14 +23,15 @@ Html, CSS, VueJS (importato tramite CDN), axios, PHP
 
 ### Passaggi:
 
-- Creare un file index e inserire in php un array contenente i dati dei dischi.
-- importare vuejs e axiom
-- stampare in pagina la lista dei dischi e le caratterisctiche dentro all'array
-- spostare i dati in un fikle json
-- riempire le copertine co i dati provenienti però dal file json e non più dall'array di index.php
-- fare dello stile delle copertine
+1 Creare un file index e inserire in php un array contenente i dati dei dischi.
+2 importare bootstrap, vuejs e axiom
+3 stampare in pagina la lista dei dischi e le caratterisctiche dentro all'array presente in php
+4 spostare i dati in un file json
+5 riempire le copertine co i dati provenienti però dal file json e non più dall'array di index.php
+6 fare dello stile delle copertine
 
 
+---------
 
 Qui il contenuto del file dischi.json che potete usare
 
