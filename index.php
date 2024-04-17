@@ -63,12 +63,13 @@ NB
 */
 //se attivo header mi scarica il file json
 //header('Content-type: applicatio/json');
+echo $json_string;
 
 
-//echo $json_string;
 
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -80,12 +81,22 @@ NB
 	<!-- cdn bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 	<div id="app">
 
-		<h1><?= $dischi[0]['title'] ?></h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<h3>
+						{{ message }}
+					</h3>
+				</div>
+			</div>
+		</div>
 
 
 
@@ -97,6 +108,7 @@ NB
 		crossorigin="anonymous"></script>
 	<!-- cdn vuejs -->
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<script src="./assets/js/app.js"></script>
 	<!-- cdn axios -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
 		integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
