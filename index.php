@@ -5,8 +5,8 @@
 2 importare bootstrap, vuejs e axiom
 3 stampare in pagina la lista dei dischi e le caratterisctiche dentro all'array presente in php
 4 spostare i dati in un file .json
+5 riempire le copertine co i dati provenienti però dal file json e non più dall'array di api.php
 ____________________________________________________________________________________________________________
-5 riempire le copertine co i dati provenienti però dal file json e non più dall'array di index.php
 6 fare dello stile delle copertine
 */
 
@@ -85,22 +85,22 @@ echo $json_string;
 
 <body>
 	<div id="app">
-
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-4" v-for="disk in dischi">
-					<img class="cover" :src="disk.poster" alt="">
-					<h3> {{disk.title}} </h3>
-					<div> {{disk.author}} </div>
-					<div> {{disk.year}} </div>
-					<div> {{disk.genre}} </div>
+					<div class="box_image position-relative p-2 my-4">
+						<img class="cover " :src="disk.poster" alt="">
+						<div class="infoDisk position-absolute top-50 start-50 translate-middle">
+							<h3> {{disk.title}} </h3>
+							<div> {{disk.author}} </div>
+							<div> {{disk.year}} </div>
+							<div> {{disk.genre}} </div>
+						</div>
+					</div>
 
 				</div>
 			</div>
 		</div>
-
-
-
 	</div>
 
 	<!-- cdn axios -->

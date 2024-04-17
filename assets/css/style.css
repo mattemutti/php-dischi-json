@@ -1,8 +1,26 @@
 body {
-	background-color: lightgray;
+	background-color: lightcoral;
 }
 
 
 .cover {
 	width: 300px;
+}
+
+.infoDisk {
+	visibility: hidden;
+}
+
+.box_image:hover {
+
+	.cover {
+		opacity: 20%;
+
+	}
+
+	.infoDisk {
+		visibility: visible;
+
+	}
+
 }
